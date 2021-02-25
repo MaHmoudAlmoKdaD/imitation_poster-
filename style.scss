@@ -1,0 +1,108 @@
+@import 'variables';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 720px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+header{
+    display: block;
+
+    .hero{
+        float: left;
+        h1{
+            font-family: $poppins;
+            color: #cacaca;
+            font-size: 5em;
+            width: 350px;
+            line-height: .8em;
+            background-image: url('images/main-image.png');
+            background-size: cover;
+            background-position: center;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        p{
+            font-family: $poppins;
+            
+            color: #63605e;
+            width: 330px;
+            padding: 20px 0;
+        }
+        button{
+            font-family: $poppins;
+            padding: 4px 15px;
+            border-radius: 15px;
+            background-color: #63605e;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+    }
+    .logo{
+        img{
+            float: right;
+            width: 100px;
+        }
+    }
+}
+section{
+    display: inline-block;
+    .hand{
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
+        color: #63605e;
+        width: 330px;
+        transform: rotate(340deg);
+        line-height: 1em;
+    }
+    .main-image{
+        position: relative;
+        top: -350px;
+        z-index: -1;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+footer{
+    position: relative;
+    top: -400px;
+    .contact-info{
+        color: #63605e;
+    }
+    .social{
+        ul{
+            li{
+                list-style-type: none;
+                float: left;
+                padding-right: 10px;
+                img{
+                    width: 24px;
+                }
+            }
+        }
+    }
+    .website{
+        float: right;
+        a{
+            color: #63605e;
+            text-decoration: none;
+            font-family: $poppins;
+            text-transform: uppercase;
+        }
+    }
+    .dolor{
+        line-height: 30px;
+    }
+    #number{
+        margin-top: 5px;
+    }
+}
